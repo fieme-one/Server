@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: "https://your-frontend.netlify.app" // replace with your Netlify domain
+  origin: "https://leavstyles.netlify.app" // replace with your Netlify domain
 }));
 
 // Google OAuth client
@@ -71,7 +71,7 @@ app.post("/verify-token", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Backend is working!");
+  res.send("Backend is working! dont worry");
 });
 
 const PORT = process.env.PORT || 3000;
